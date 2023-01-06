@@ -1,12 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    hello world!
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reversoid</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-menu">
+        <div class="links">
+          <div class="links-decoration">
+            <div id="links__header"></div>
+            <div class="avatar" id="links-avatar"></div>
+          </div>
+          <a href="#second-section" class="navbar-menu__item">Услуги</a>
+          <a href="#projects" class="navbar-menu__item">Примеры</a>
+          <!-- <a href="#price" class="navbar-menu__item">Цена</a> -->
+          <a href="#contacts-section" class="navbar-menu__item">Контакты</a>
+        </div>
+
+        <div class="menu-burger__header">
+          <span></span>
+        </div>
+        <!-- <div id="navbar-menu__btn" class="btn">Связаться</div> -->
+
+        <a href="#ex1" rel="modal:open" id="navbar-menu__btn"
+          ><div class="btn">Связаться</div></a
+        >
+      </div>
+    </nav>
+    <section id="first-section">
+      <h1 id="first-section__main-text">Разработка веб-приложений</h1>
+      <h2 id="first-section__secondary-text">
+        Создаем решение для вашего бизнеса
+      </h2>
+      <div class="avatar" id="intro-avatar"></div>
+      <div id="wave"></div>
+    </section>
+    <section id="second-section">
+      <div id="second-section__rows-container">
+        <h1 id="second-section__main-text">
+          Приветствую, я занимаюсь веб-разработкой
+        </h1>
+        <h2 id="second-section__secondary-text">
+          Поможем вам сделать многостраничный сайт или полноценное
+          веб-приложение. Разработка веб-приложения включает в себя
+          проектирование базы данных, настройку сервера и создание удобной и
+          безопасной оболочки. Также необходимо связать все компоненты воедино,
+          чтобы приложение работало правильно и быстро.
+        </h2>
+      </div>
+    </section>
+    <section id="what-do">
+      <div id="what-do__column-container">
+        <div class="column">
+          <div class="image" id="code-img"></div>
+          <h1 class="what-do-section__title">Frontend-разработка</h1>
+          <p class="what-do-section__description">
+            Создаем адаптивный веб-сайт с готового макета, который будет удобен
+            для использования на компьютерах и мобильных устройствах
+          </p>
+          <h2 class="what-do-section__subtitle">Используемые языки</h2>
+          <p class="what-do-section__description">HTML, Javascript, CSS, PHP</p>
+          <h2 class="what-do-section__subtitle">Используемые технологии</h2>
+          <ul class="what-do-section__description">
+            <li>Visual Studio Code</li>
+            <li>Bitbucket</li>
+            <li>Bootstrap</li>
+            <li>JQuery</li>
+            <li>Firefox Developer Tools</li>
+          </ul>
+        </div>
+        <div class="column">
+          <div class="image" id="php-img"></div>
+          <h1 class="what-do-section__title">Backend-решения</h1>
+          <p class="what-do-section__description">
+            С помощью возможностей языка PHP, поможем вам получать заявки,
+            оформленные на сайте, прямо на Вашу почту
+          </p>
+          <h2 class="what-do-section__subtitle">Используемые языки</h2>
+          <p class="what-do-section__description">PHP, Javascript</p>
+          <h2 class="what-do-section__subtitle">Используемые технологии</h2>
+          <ul class="what-do-section__description">
+            <li>Visual Studio Code</li>
+            <li>Bitbucket</li>
+            <li>Github</li>
+            <li>Ajax</li>
+            <li>PHP Mailer</li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <div class="image" id="react-img"></div>
+          <h1 class="what-do-section__title">Fullstack-разработка</h1>
+          <p class="what-do-section__description">
+            Используя Node.js вместе с React.js поможем вам создать полноценное
+            клиент-серверное приложение
+          </p>
+          <h2 class="what-do-section__subtitle">Используемые языки</h2>
+          <p class="what-do-section__description">Javascript, HTML, CSS</p>
+          <h2 class="what-do-section__subtitle">Используемые технологии</h2>
+          <ul class="what-do-section__description">
+            <li>Node.js</li>
+            <li>React.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1 id="projects__title">Мои недавние работы</h1>
+      <h2 id="projects__description">
+        Здесь представлены несколько проектов, над которыми я недавно работал
+      </h2>
+      <div id="projects-grid">
+        <div class="project-item" style="box-shadow: 0 0 20px #505050">
+          <figure id="metacritic-img" class="project-img"></figure>
+          <div class="project-tag">New</div>
+          <div class="background-shade"></div>
+          <figcaption class="img-caption">
+            <h1 class="img-caption__description">
+              Клиент-серверное приложение, написанное на React, NodeJS. Сделано
+              без дизайнера.
+            </h1>
+            <a href="https://megacritic.herokuapp.com/feed" target="_blank"
+              ><div class="projects__link-btn btn">Перейти</div></a
+            >
+          </figcaption>
+        </div>
+
+        <div class="project-item">
+          <figure id="facebook-img" class="project-img"></figure>
+          <div class="background-shade"></div>
+          <figcaption class="img-caption">
+            <h1 class="img-caption__description">
+              Данный блок является заглушкой и не является реальной работой
+            </h1>
+            <div class="projects__link-btn btn">Перейти</div>
+          </figcaption>
+        </div>
+
+        <div class="project-item">
+          <figure id="meta-img" class="project-img"></figure>
+          <div class="background-shade"></div>
+          <figcaption class="img-caption">
+            <h1 class="img-caption__description">
+              Данный блок является заглушкой и не является реальной работой
+            </h1>
+            <div class="projects__link-btn btn">Перейти</div>
+          </figcaption>
+        </div>
+        <div class="project-item">
+          <figure id="amazon-img" class="project-img"></figure>
+          <div class="background-shade"></div>
+          <figcaption class="img-caption">
+            <h1 class="img-caption__description">
+              Данный блок является заглушкой и не является реальной работой
+            </h1>
+            <div class="projects__link-btn btn">Перейти</div>
+          </figcaption>
+        </div>
+        <div class="project-item">
+          <figure id="github-img" class="project-img"></figure>
+          <div class="background-shade"></div>
+          <figcaption class="img-caption">
+            <h1 class="img-caption__description">
+              Данный блок является заглушкой и не является реальной работой
+            </h1>
+            <div class="projects__link-btn btn">Перейти</div>
+          </figcaption>
+        </div>
+        <div class="project-item">
+          <figure id="wd-img" class="project-img"></figure>
+          <div class="background-shade"></div>
+          <figcaption class="img-caption">
+            <h1 class="img-caption__description">
+              Данный блок является заглушкой и не является реальной работой
+            </h1>
+            <div class="projects__link-btn btn">Перейти</div>
+          </figcaption>
+        </div>
+      </div>
+      <div class="btn" id="more-examples-btn">Больше примеров</div>
+    </section>
+    <section id="contacts-section">
+      <h1 id="projects__title">Контакты</h1>
+      <div id="contacts-container">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img src="img/svg/telegram.svg" class="contacts-icon" alt="" />
+              </td>
+              <td>
+                <a class="contacts-item" href="tel:+79319991505"
+                  >+7 (931) 999-15-05</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="img/svg/email.svg" class="contacts-icon" alt="" />
+              </td>
+              <td>
+                <a class="contacts-item" href="mailto:ancient.gekob@gmail.com"
+                  >ancient.gekob@gmail.com</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="#ex1" rel="modal:open"
+          ><div class="btn contacts__btn">Оставить заявку</div></a
+        >
+      </div>
+      <div class="socials-container">
+        <a href="https://github.com/reversoid" target="_blank"
+          ><div class="social" id="github-svg"></div
+        ></a>
+      </div>
+    </section>
+
+    <div id="ex1" class="modal popup-window">
+      <div id="popup-window__header"></div>
+      <div class="avatar" id="popup-avatar"></div>
+
+      <h1 id="popup-window__tittle">Отправить заявку</h1>
+      <div id="form-container">
+        <form id="popup-form" method="POST">
+          <div class="form-item">
+            <label for="name">Ваше имя</label>
+            <input id="name" type="text" class="input" name="name" />
+          </div>
+          <div class="form-item">
+            <label for="contacts">Ваши контакты</label>
+            <input id="contacts" type="text" class="input" name="contacts" />
+          </div>
+          <div id="textarea-field" class="form-item">
+            <label for="description">Дополнительная информация</label>
+            <textarea
+              class="textarea"
+              name="description"
+              id="description"
+              cols="30"
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            id="send-btn"
+            class="btn medium-btn"
+            value="Отправить"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
